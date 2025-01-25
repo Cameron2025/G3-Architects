@@ -7,6 +7,9 @@
     font-style: normal;
   }
   
+  .hedden{
+    display: none;
+  }
  
 /* banner style */
   .header{
@@ -233,4 +236,33 @@
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
+}
+
+/* small device responsive */
+@media screen and (max-width:576px) {
+  .navber ,
+  .nav-links,
+  .container,
+  .features{
+    flex-direction: column;
+  }
+  .picture{
+    padding: 0px;
+   }
+   .team-image,
+   .facts-container,
+   .sponsor-companies{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .team-feature{
+    margin-left: 0px;
+   }
+   #experience-badge{
+    padding: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+   }
+   .facts-container{
+    gap: 15px;
+   }
 }
